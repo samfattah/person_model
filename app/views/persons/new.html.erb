@@ -1,0 +1,31 @@
+<h1>Add New Person</h1>
+
+<%= form_for @person do |f| %>
+<div>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: 'Name', required: true %>
+</div>
+<div>
+  <%= f.label :age %>
+  <%= f.text_field :age, placeholder 'Age', required: true %>
+</div>
+<div>
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color, placeholder 'Hair Color', required: true %>
+</div>
+<div>
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color, placeholder 'Eye Color', required: true %>
+</div>
+<div>
+  <%= f.label :gender %>
+  <%= f.text_field :gender, placeholder: 'Gender', required: true %>
+</div>
+<div>
+  <%= f.label :alive %>
+  <%= f.check_box :alive %>
+</div>
+
+  <%= f.submit %>
+
+<% end %>
